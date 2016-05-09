@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.gerald.elec.domain.ElecCommonMsgContent" table="Elec_CommonMsg_Content">
+        <id name="comID" type="java.lang.String" column="comID"  >
+            <generator class="uuid" >
+            </generator>
+        </id>
+        <property name="type" type="string" column="type"/>
+        <property name="content" type="string" column="content"/>
+        <property name="orderby" type="java.lang.Integer" column="orderby"/>
+    </class>
+</hibernate-mapping>
